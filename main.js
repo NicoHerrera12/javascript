@@ -51,10 +51,7 @@ let suma=0;
 function confirmar(){
     let confirm = prompt("1-Confirmar compra \n2-Cancelar compra")
     if(confirm == 1){
-        
-        // for (let i = 0; i < total.length; i++){
-        //     sum += total[i];
-        // }
+
         for (let bebida of total){
             suma += bebida;
         }
@@ -70,12 +67,18 @@ function confirmar(){
     }
 }
 
+let nombre = prompt("¿Como es tu nombre?");
 
 function delivery() {
-    let nombre = prompt("¿Como es tu nombre?");
     alert("Hola " + nombre + "! Comencemos con el pedido!");
     tomarPedido();
     second();
     confirmar()
 }
 delivery();
+
+let saludo = document.getElementById("saludo");
+saludo.innerText = saludo.innerText + " " + nombre;
+
+let precio = document.getElementById("precio");
+precio.innerText = precio.innerText + suma;

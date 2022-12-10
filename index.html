@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Pre-entrega 1 Herrera Lucas Nicolás</h1>
     <p>Lista y total en consola!</p>
-    <script src="./main.js"></script>
+
+    <main>
+        <section>
+            <form class="form" action="">
+                <div class="form__arriba">
+                    <h2 class="form__title">Bebidas Nico</h2>
+                    <h3 class="form__saludo" id="saludo">Bienvenido</h3>
+                    <p class="form__info">Elegi la cantidad de cada bebida que quieras y al final podras ver el total de lo que vas
+                        seleccionando!</p>
+                </div>
+
+                <div class="form__abajo">
+                    
+
+                    <div class="form__eleccion">
+                        <span class="form__span">Elegi lo que queres tomar!</span>
+                        <div class="form__item">
+                            <label class="form__bebida" for="vodka">Vodka</label><input class="form__input"
+                                type="number" id="vodka">
+                            <img class="form__bebida--img" src="./assets/images/vodka-removebg-preview.png" alt="">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__bebida" for="fernet">Fernet</label><input class="form__input"
+                                type="number" id="fernet">
+                            <img class="form__bebida--img" src="./assets/images/fernet-removebg-preview.png" alt="">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__bebida" for="gin">Gin</label><input class="form__input" type="number"
+                                id="gin">
+                            <img class="form__bebida--img" src="./assets/images/gin-removebg-preview.png" alt="">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__bebida" for="gancia">Gancia</label><input class="form__input"
+                                type="number" id="gancia">
+                            <img class="form__bebida--img" src="./assets/images/gancia-removebg-preview.png" alt="">
+                        </div>
+
+                    </div>
+                    
+                    <div class="form__total">
+                        
+                        <span class="form__enviar">Total</span>
+                        <span class="form__enviar" id="precio">$</span>
+                        <input class="form__enviar form__button" type="submit" name="" id="" value="Enviar pedido">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- <script src="./main.js"></script> -->
 </body>
+
 </html>
